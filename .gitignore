@@ -1,0 +1,12 @@
+*.iml
+/LocationTracker/.gradle
+/LocationTracker/local.properties
+/LocationTracker/.idea/workspace.xml
+/LocationTracker/.idea/libraries
+/LocationTracker/.DS_Store
+/LocationTracker/build
+/LocationTracker/captures
+.externalNativeBuild
+.idea
+
+
