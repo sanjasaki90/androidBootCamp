@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="locationTracksColor">#9C27B0</color>
+    <color name="noticeText">#B0BEC5</color>
+    <color name="buttonColor">#F3E5F5</color>
 </resources>

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">LocationTracker</string>
+
+    <string name="My_tracks">My Tracks</string>
+    <string name="No_tracks">You have no tracks recorded.Click on new tracks button to start recording tracks.</string>
+    <string name="New_track">NEW TRACK</string>
+    <string name="New_track_title">New Track</string>
+    <string name="Name">Name:</string>
+    <string name="Description">Description:</string>
+    <string name="track_name_hint">Enter name</string>
+    <string name="track_desc_hint">Enter description</string>
+
+    <string name="new_track_error_field_format">Field %1$s cannot be empty!</string>
 </resources>
