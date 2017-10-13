@@ -8,5 +8,6 @@
 /LocationTracker/captures
 .externalNativeBuild
 .idea
+.gen
 
 
