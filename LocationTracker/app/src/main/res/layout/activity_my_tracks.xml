@@ -12,7 +12,7 @@
 
     <Button
         android:id="@+id/newTrack"
-        android:text="New_track"
+        android:text="@string/New_track"
         android:onClick="NewTrack"
         style="@style/footerButton" />
 
@@ -23,6 +23,7 @@
 
     <ImageButton
         android:id="@+id/settings"
+        android:onClick="openSettings"
         style="@style/settingsButton"/>
 
     <ListView

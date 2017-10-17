@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.locationtracker.myapp.locationtracker.AddLocationActivity">
+
+
+    <TextView
+        android:text="@string/add_location"
+        android:id="@+id/myTracksTitle"
+        style="@style/title"/>
+
+    <TextView
+        android:text="@string/Latitude"
+        android:id="@+id/fieldLabelLatitude"
+        android:layout_below="@+id/myTracksTitle"
+        style="@style/fieldLabel" />
+
+    <EditText
+        android:id="@+id/editLatitude"
+        android:hint="@string/track_name_Latitude"
+        android:layout_below="@+id/myTracksTitle"
+        android:inputType="numberDecimal"
+        android:drawableEnd="@drawable/degree"
+        style="@style/editText" />
+
+    <TextView
+        android:text="@string/Longitude"
+        android:id="@+id/fieldLabelLongitude"
+        android:layout_below="@+id/editLatitude"
+        style="@style/fieldLabel" />
+
+    <EditText
+        android:id="@+id/editLongitude"
+        android:hint="@string/track_name_Longitude"
+        android:layout_below="@+id/editLatitude"
+        android:inputType="numberDecimal"
+        android:drawableEnd="@drawable/degree"
+        style="@style/editText" />
+
+    <TextView
+        android:text="@string/Altitude"
+        android:id="@+id/fieldLabelAltitude"
+        android:layout_below="@+id/editLongitude"
+        style="@style/fieldLabel" />
+
+    <EditText
+        android:id="@+id/editAltitude"
+        android:hint="@string/track_name_Altitude"
+        android:layout_below="@+id/editLongitude"
+        android:inputType="numberDecimal"
+        android:layout_width="300dp"
+        style="@style/editText" />
+
+    <TextView
+        android:text="m"
+        android:id="@+id/fieldLabelM"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editAltitude"
+        android:layout_marginTop="250dp"
+        android:layout_width="50dp" />
+
+    <TextView
+        android:text="@string/speed"
+        android:id="@+id/fieldLabelSpeed"
+        android:layout_below="@+id/editAltitude"
+        style="@style/fieldLabel" />
+
+    <EditText
+        android:id="@+id/editSpeed"
+        android:hint="0"
+        android:layout_below="@+id/editAltitude"
+        android:inputType="numberDecimal"
+        android:layout_width="300dp"
+        android:enabled="false"
+        style="@style/editText" />
+
+    <TextView
+        android:text="m/s"
+        android:id="@+id/fieldLabelMs"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editSpeed"
+        android:layout_marginTop="320dp"
+        android:layout_width="50dp" />
+    <Button
+        android:id="@+id/add"
+        android:text="@string/add"
+        style="@style/footerButton" />
+</RelativeLayout>

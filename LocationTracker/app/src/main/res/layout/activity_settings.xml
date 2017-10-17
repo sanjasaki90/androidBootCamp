@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.locationtracker.myapp.locationtracker.SettingsActivity">
+
+    <TextView
+        android:text="@string/settingsTitle"
+        android:id="@+id/settingsTitle"
+        style="@style/title"/>
+
+    <TextView
+        android:text="@string/sampling_rate"
+        android:id="@+id/fieldLabelSamplingRate"
+        android:layout_below="@+id/settingsTitle"
+        style="@style/fieldLabel" />
+
+    <EditText
+        android:id="@+id/editSamplingRate"
+        android:layout_below="@+id/settingsTitle"
+        android:inputType="numberDecimal"
+        android:layout_width="300dp"
+        style="@style/editText" />
+    <TextView
+        android:text="s"
+        android:id="@+id/fieldLabelS"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editSamplingRate"
+        android:layout_marginTop="85dp"
+        android:layout_width="50dp" />
+    <TextView
+        android:text="@string/speed"
+        android:id="@+id/textSpeed"
+        android:layout_below="@+id/editSamplingRate"
+        style="@style/fieldLabel" />
+
+    <EditText
+        android:id="@+id/editSetSpeed"
+        android:layout_below="@+id/editSamplingRate"
+        android:inputType="numberDecimal"
+        android:layout_width="300dp"
+        style="@style/editText" />
+    <TextView
+        android:text="s/m"
+        android:id="@+id/fieldLabelSpeed"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editSetSpeed"
+        android:layout_marginTop="150dp"
+        android:layout_width="50dp" />
+    <TextView
+        android:text="@string/home_city"
+        android:id="@+id/textHomeCity"
+        android:layout_below="@+id/editSetSpeed"
+        style="@style/fieldLabel" />
+    <Spinner
+        android:id="@+id/spinnerHomeCities"
+        android:entries="@array/homeCities"
+        android:layout_below="@+id/editSetSpeed"
+        android:layout_marginTop="30dp"
+        style="@style/cities"/>
+    <TextView
+        android:id="@+id/fieldLabelSetLatitude"
+        android:layout_below="@+id/spinnerHomeCities"
+        android:text="@string/settings_latitude_format"
+        style="@style/fieldLabel"/>
+    <TextView
+        android:id="@+id/fieldLabelSetLongitude"
+        android:text="@string/settings_longitude_format"
+        android:layout_below="@+id/spinnerHomeCities"
+        android:layout_marginTop="40dp"
+        style="@style/fieldLabel"/>
+    <TextView
+        android:id="@+id/textViewHomeCityAltitude"
+        android:text="@string/settings_altitude_format"
+        android:layout_below="@+id/spinnerHomeCities"
+        android:layout_marginTop="70dp"
+        style="@style/fieldLabel"/>
+    <Button
+        android:id="@+id/setDone"
+        android:text="@string/done"
+        style="@style/footerButton" />
+
+</RelativeLayout>

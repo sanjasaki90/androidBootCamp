@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.locationtracker.myapp.locationtracker.NewTrackActivity">
+
+    <TextView
+        android:text="@string/New_track_title"
+        android:id="@+id/myTracksTitle"
+        style="@style/title"/>
+
+    <TextView
+        android:text="@string/Name"
+        android:id="@+id/fieldLabelName"
+        android:layout_below="@+id/myTracksTitle"
+        style="@style/fieldLabel" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:hint="@string/track_name_hint"
+        android:layout_below="@+id/myTracksTitle"
+        style="@style/editText" />
+
+    <TextView
+        android:text="@string/Description"
+        android:id="@+id/fieldLabelDescription"
+        android:layout_below="@+id/editName"
+        style="@style/fieldLabel" />
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:hint="@string/track_desc_hint"
+        android:layout_below="@+id/editName"
+        style="@style/editText"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:text="@string/start"
+        android:onClick="StartTrack"
+        style="@style/footerButton" />
+
+</RelativeLayout>

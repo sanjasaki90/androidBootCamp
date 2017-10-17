@@ -9,6 +9,29 @@
     <string name="Description">Description:</string>
     <string name="track_name_hint">Enter name</string>
     <string name="track_desc_hint">Enter description</string>
-
+    <string name="start">START</string>
     <string name="new_track_error_field_format">Field %1$s cannot be empty!</string>
+    <string name="track_details_title">Title</string>
+    <string name="track_details_description">Description</string>
+    <string name="addLocation">ADD LOCATION</string>
+    <string name="no_location">You have no location samples recorded.Click on Add Location button to start recording samples.</string>
+    <string name="done">DONE</string>
+    <string name="add_location">Add Location</string>
+    <string name="Latitude">Latitude:</string>
+    <string name="track_name_Latitude">Enter Latitude</string>
+    <string name="Longitude">Longitude:</string>
+    <string name="track_name_Longitude">Enter Longitude</string>
+    <string name="Altitude">Altitude:</string>
+    <string name="track_name_Altitude">Enter Altitude</string>
+    <string name="speed">Speed:</string>
+    <string name="add">ADD</string>
+    <string name="settingsTitle">Settings</string>
+    <string name="sampling_rate">Sampling rate:</string>
+    <string name="track_name_SamplingRate"></string>
+    <string name="home_city">Home City:</string>
+    <string name="settings_latitude_format">LAT: %1$s °</string>
+    <string name="settings_longitude_format">LONG: %1$s °</string>
+    <string name="settings_altitude_format">ALT: %1$s m</string>
+
+
 </resources>

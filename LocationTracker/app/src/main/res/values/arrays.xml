@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="homeCities">
+        <item>Belgrade</item>
+        <item>Berlin</item>
+        <item>London</item>
+        <item>New York</item>
+        <item>Sydney</item>
+    </string-array>
+    <string-array name="homeCitiesLatitudes">
+        <item>44.787197</item>
+        <item>52.520008</item>
+        <item>51.508530</item>
+        <item>40.730610</item>
+        <item>-33.865143</item>
+    </string-array>
+    <string-array name="homeCitiesLongitudes">
+        <item>20.457273</item>
+        <item>13.404954</item>
+        <item>-0.076132</item>
+        <item>-73.935242</item>
+        <item>151.209900</item>
+    </string-array>
+    <string-array name="homeCitiesAltitudes">
+        <item>170</item>
+        <item>36</item>
+        <item>7</item>
+        <item>10</item>
+        <item>23</item>
+    </string-array>
+</resources>

@@ -49,7 +49,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:layout_marginTop">@dimen/footerButtonMarginTop</item>
+
         <item name="android:layout_marginBottom">@dimen/footerButtonMarginBottom</item>
         <item name="android:layout_marginStart">@dimen/footerButtonMarginStart</item>
         <item name="android:layout_marginEnd">@dimen/footerButtonMarginEnd</item>
@@ -81,14 +81,47 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">viewStart</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:layout_marginTop">@dimen/fieldMarginTop</item>
+        <item name="android:layout_marginEnd">@dimen/editTextMarginEnd</item>
     </style>
 
     <style name="editText" parent="@android:style/TextAppearance">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:inputType">text</item>
+        <item name="android:layout_marginTop">@dimen/editTextMarginTop</item>
+        <item name="android:layout_marginEnd">@dimen/editTextMarginEnd</item>
+    </style>
+
+    <style name="subtitle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/noticeText</item>
+        <item name="android:textSize">@dimen/subtitleTextSize</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginBottom">@dimen/subtitleMarginBottom</item>
+        <item name="android:layout_marginStart">@dimen/subtitleMarginStart</item>
+        <item name="android:layout_marginEnd">@dimen/subtitleMarginEnd</item>
+    </style>
+
+    <style name="button" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/locationTracksColor</item>
+        <item name="android:background">@color/buttonColor</item>
+        <item name="android:layout_marginTop">@dimen/titleMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/titleMarginBottom</item>
+        <item name="android:layout_marginStart">@dimen/titleMarginStart</item>
+        <item name="android:layout_marginEnd">@dimen/titleMarginEnd</item>
+    </style>
+
+    <style name="cities">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/citiesHeight</item>
+        <item name="android:layout_weight">1</item>
     </style>
 
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">20sp</dimen>
+    <dimen name="titleMarginTop">10dp</dimen>
+    <dimen name="titleMarginBottom">5dp</dimen>
+    <dimen name="titleMarginStart">5dp</dimen>
+    <dimen name="titleMarginEnd">5dp</dimen>
+
+    <dimen name="noticeTextSize">16sp</dimen>
+    <dimen name="noticeMarginStart">5dp</dimen>
+    <dimen name="noticeMarginEnd">5dp</dimen>
+    <dimen name="noticeMarginBottom">15dp</dimen>
+
+    <dimen name="footerButtonMarginTop">50dp</dimen>
+    <dimen name="footerButtonMarginBottom">10dp</dimen>
+    <dimen name="footerButtonMarginStart">10dp</dimen>
+    <dimen name="footerButtonMarginEnd">10dp</dimen>
+
+    <dimen name="imageButtonMargin">10dp</dimen>
+
+    <dimen name="layoutContainerMarginStart">15dp</dimen>
+    <dimen name="layoutContainerMarginEnd">15dp</dimen>
+
+    <dimen name="fieldTextSize">16sp</dimen>
+    <dimen name="fieldMarginTop">10dp</dimen>
+
+
+    <dimen name="editTextMarginTop">30dp</dimen>
+    <dimen name="editTextMarginEnd">5dp</dimen>
+
+
+    <dimen name="subtitleTextSize">16sp</dimen>
+    <dimen name="subtitleMarginBottom">15dp</dimen>
+    <dimen name="subtitleMarginStart">5dp</dimen>
+    <dimen name="subtitleMarginEnd">5dp</dimen>
+
+    <dimen name="citiesHeight">40dp</dimen>
+
+</resources>
