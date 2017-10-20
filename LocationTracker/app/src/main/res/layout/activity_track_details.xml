@@ -7,12 +7,12 @@
 
     <TextView
         android:text="@string/track_details_title"
-        android:id="@+id/myTracksTitle"
+        android:id="@+id/myTracksDetailsTitle"
         style="@style/title"/>
 
     <TextView
         android:id="@+id/textViewDescription"
-        android:layout_below="@+id/myTracksTitle"
+        android:layout_below="@+id/myTracksDetailsTitle"
         android:text="@string/track_details_description"
         style="@style/subtitle"/>
 

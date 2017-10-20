@@ -6,6 +6,7 @@
     <string name="New_track">NEW TRACK</string>
     <string name="New_track_title">New Track</string>
     <string name="Name">Name:</string>
+    <string name="name">Name</string>
     <string name="Description">Description:</string>
     <string name="track_name_hint">Enter name</string>
     <string name="track_desc_hint">Enter description</string>
@@ -32,6 +33,8 @@
     <string name="settings_latitude_format">LAT: %1$s °</string>
     <string name="settings_longitude_format">LONG: %1$s °</string>
     <string name="settings_altitude_format">ALT: %1$s m</string>
+    <string name="invalid_input">Invalid input</string>
+    <string name="enter_correct_val">Enter correct values</string>
 
 
 </resources>

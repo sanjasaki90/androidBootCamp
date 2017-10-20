@@ -36,4 +36,8 @@
 
     <dimen name="citiesHeight">40dp</dimen>
 
+    <dimen name="listItemTextSize">14sp</dimen>
+    <dimen name="listItemTextSizeNormal">12sp</dimen>
+
+    <dimen name="listLocationTextSize">20sp</dimen>
 </resources>

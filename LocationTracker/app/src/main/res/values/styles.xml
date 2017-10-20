@@ -124,5 +124,36 @@
         <item name="android:layout_weight">1</item>
     </style>
 
+    <style name="itemInList" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/locationTracksColor</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textSize">@dimen/listItemTextSize</item>
+    </style>
+
+    <style name="itemInListNormal" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/locationTracksColor</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textSize">@dimen/listItemTextSizeNormal</item>
+    </style>
+
+    <style name="noOfLocation" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">@color/locationTracksColor</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/listLocationTextSize</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+
+    </style>
 
 </resources>
