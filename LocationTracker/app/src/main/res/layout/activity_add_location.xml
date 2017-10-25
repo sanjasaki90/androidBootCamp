@@ -86,5 +86,6 @@
     <Button
         android:id="@+id/add"
         android:text="@string/add"
+        android:onClick="addDone"
         style="@style/footerButton" />
 </RelativeLayout>

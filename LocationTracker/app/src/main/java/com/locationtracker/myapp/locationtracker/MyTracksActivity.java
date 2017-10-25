@@ -48,6 +48,8 @@ public class MyTracksActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(MyTracksActivity.this, TrackDetailsActivity.class);
                 intent.putExtra(Track.TRACK_ID, i+1);
+                intent.putExtra(Track.NAME, tracks.get(0).getName());
+                intent.putExtra(Track.DESCRIPTION, tracks.get(0).getDescription());
                 startActivity(intent);
             }
         });

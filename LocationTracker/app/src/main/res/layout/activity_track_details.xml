@@ -30,7 +30,7 @@
     <Button
         android:id="@+id/doneButton"
         android:text="@string/done"
-        android:onClick=""
+        android:onClick="onDone"
         style="@style/footerButton" />
     <ListView
         android:id="@+id/listLocations"

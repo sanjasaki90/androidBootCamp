@@ -21,6 +21,10 @@
     <string name="Latitude">Latitude:</string>
     <string name="track_name_Latitude">Enter Latitude</string>
     <string name="Longitude">Longitude:</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="altitude">Altitude</string>
+    <string name="Speed">Speed</string>
     <string name="track_name_Longitude">Enter Longitude</string>
     <string name="Altitude">Altitude:</string>
     <string name="track_name_Altitude">Enter Altitude</string>
@@ -28,13 +32,21 @@
     <string name="add">ADD</string>
     <string name="settingsTitle">Settings</string>
     <string name="sampling_rate">Sampling rate:</string>
-    <string name="track_name_SamplingRate"></string>
+    <string name="track_name_SamplingRate">Sampling rate</string>
     <string name="home_city">Home City:</string>
-    <string name="settings_latitude_format">LAT: %1$s °</string>
-    <string name="settings_longitude_format">LONG: %1$s °</string>
-    <string name="settings_altitude_format">ALT: %1$s m</string>
+    <string name="settings_latitude_format">LAT: %1$s.4f °</string>
+    <string name="settings_longitude_format">LONG: %1$s.4f °</string>
+    <string name="settings_altitude_format">ALT: %1$s.4f m</string>
+
+    <string name="settings_latitude">LAT: %1$s °</string>
+    <string name="settings_longitude">LONG: %1$s °</string>
+    <string name="settings_altitude">ALT: %1$s m</string>
+
     <string name="invalid_input">Invalid input</string>
     <string name="enter_correct_val">Enter correct values</string>
-
-
+    <string name="track_details_dialog_title">Done?</string>
+    <string name="track_details_dialog_message">Have You finished adding locations?</string>
+    <string name="track_details_dialog_yes">Yes</string>
+    <string name="track_details_dialog_no">No</string>
+    <string name="add_location_error_field_value_format">Field %1$s must be between %2$d and %3$d degrees!</string>
 </resources>

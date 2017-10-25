@@ -1,8 +1,6 @@
 package com.locationtracker.myapp.locationtracker.adapter;
 
 import android.content.Context;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +27,7 @@ public class LocationAdapter extends ArrayAdapter<Location>{
 
     public LocationAdapter(Context context, List<Location> locations){
         super(context, R.layout.location_in_list, locations);
+        this.context = context;
     }
 
     @Override
@@ -41,10 +40,28 @@ public class LocationAdapter extends ArrayAdapter<Location>{
 
         if(convertView == null){
             LayoutInflater inflater = LayoutInflater.from(getContext());
+            convertView = inflater.inflate(R.layout.location_in_list, parent ,false);
 
+            latitude = convertView.findViewById(R.id.lat);
+            longitude =  convertView.findViewById(R.id.longi);
+            altitude = convertView.findViewById(R.id.alti);
+            index = convertView.findViewById(R.id.noOfLocation);
+
+            locationsView.add(0, index);
+            locationsView.add(1, latitude);
+            locationsView.add(2, longitude);
+            locationsView.add(3, altitude);
+
+            convertView.setTag(locationsView);
+        }else{
+            locationsView = (ArrayList<TextView>) convertView.getTag();
         }
+        result = convertView;
 
-
+        latitude.setText(context.getString(R.string.settings_latitude_format, location.getLatitude()));
+        longitude.setText(context.getString(R.string.settings_longitude_format, location.getLongitude()));
+        altitude.setText(context.getString(R.string.settings_altitude_format, location.getAltitude()));
+        index.setText(Integer.toString(position +1));
 
         return result;
     }

@@ -79,6 +79,7 @@
     <Button
         android:id="@+id/setDone"
         android:text="@string/done"
+        android:onClick="settingsDone"
         style="@style/footerButton" />
 
 </RelativeLayout>
