@@ -2,6 +2,7 @@ package com.locationtracker.myapp.locationtracker;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,9 +13,10 @@ import com.locationtracker.myapp.locationtracker.model.Track;
 
 public class NewTrackActivity extends AppCompatActivity {
 
-
     EditText editName;
     EditText editDescription;
+
+    public static final String NEW_TRACK_FILE_KEY = "NewTrack";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,10 +54,17 @@ public class NewTrackActivity extends AppCompatActivity {
             alertDialog.show();
             return;
         } else {
+          /* SharedPreferences sharedPreferences = this.getSharedPreferences(NEW_TRACK_FILE_KEY, MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString(Track.NAME, editName.getText().toString());
+            editor.putString(Track.DESCRIPTION, editDescription.getText().toString());
+            editor.commit();*/
+
             Intent intent = new Intent(this, TrackDetailsActivity.class);
-            intent.putExtra(Track.NAME, editName.getText());
-            intent.putExtra(Track.DESCRIPTION, editDescription.getText());
+            intent.putExtra(Track.NAME, editName.getText().toString());
+            intent.putExtra(Track.DESCRIPTION, editDescription.getText().toString());
             startActivity(intent);
+            finish();
         }
     }
 }

@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.locationtracker.myapp.locationtracker.adapter.TrackAdapter;
+import com.locationtracker.myapp.locationtracker.database.LocationHelper;
 import com.locationtracker.myapp.locationtracker.model.Track;
 
 public class MyTracksActivity extends AppCompatActivity {
@@ -34,11 +35,13 @@ public class MyTracksActivity extends AppCompatActivity {
     protected void onStart(){
         super.onStart();
 
-        Track track = new Track();
+        tracks = LocationHelper.getInstance(this).allTracks();
+
+       /* Track track = new Track();
         track.setId(1);
         track.setDescription("Ovo je test za desc");
         track.setName("Ovo je test za name");
-        tracks.add(track);
+        tracks.add(track);*/
 
         trackAdapter = new TrackAdapter(getApplicationContext(), tracks);
         listTracks.setAdapter(trackAdapter);
@@ -48,8 +51,8 @@ public class MyTracksActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(MyTracksActivity.this, TrackDetailsActivity.class);
                 intent.putExtra(Track.TRACK_ID, i+1);
-                intent.putExtra(Track.NAME, tracks.get(0).getName());
-                intent.putExtra(Track.DESCRIPTION, tracks.get(0).getDescription());
+                //intent.putExtra(Track.NAME, tracks.get(0).getName());
+                //intent.putExtra(Track.DESCRIPTION, tracks.get(0).getDescription());
                 startActivity(intent);
             }
         });
@@ -67,10 +70,13 @@ public class MyTracksActivity extends AppCompatActivity {
         Intent intent = new Intent(this, NewTrackActivity.class);
         startActivity(intent);
     }
-
     public void openSettings(View view){
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
-
+    @Override
+    protected void onDestroy(){
+        LocationHelper.getInstance(this).closeDB();
+        super.onDestroy();
+    }
 }

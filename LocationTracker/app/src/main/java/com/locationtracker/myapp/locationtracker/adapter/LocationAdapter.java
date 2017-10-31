@@ -65,7 +65,4 @@ public class LocationAdapter extends ArrayAdapter<Location>{
 
         return result;
     }
-
-
-
 }

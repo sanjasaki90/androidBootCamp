@@ -36,7 +36,7 @@
         style="@style/fieldLabel" />
 
     <EditText
-        android:id="@+id/editSetSpeed"
+        android:id="@+id/editSpeed"
         android:layout_below="@+id/editSamplingRate"
         android:inputType="numberDecimal"
         android:layout_width="300dp"
@@ -45,18 +45,18 @@
         android:text="s/m"
         android:id="@+id/fieldLabelSpeed"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/editSetSpeed"
+        android:layout_toRightOf="@+id/editSpeed"
         android:layout_marginTop="150dp"
         android:layout_width="50dp" />
     <TextView
         android:text="@string/home_city"
         android:id="@+id/textHomeCity"
-        android:layout_below="@+id/editSetSpeed"
+        android:layout_below="@+id/editSpeed"
         style="@style/fieldLabel" />
     <Spinner
         android:id="@+id/spinnerHomeCities"
         android:entries="@array/homeCities"
-        android:layout_below="@+id/editSetSpeed"
+        android:layout_below="@+id/editSpeed"
         android:layout_marginTop="30dp"
         style="@style/cities"/>
     <TextView
