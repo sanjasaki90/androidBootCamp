@@ -1,5 +1,6 @@
 package com.locationtracker.myapp.locationtracker.database;
 
+import android.content.ContentResolver;
 import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
 
@@ -12,9 +13,15 @@ public class LocationsContractClass {
     public static final String DATABASE_NAME = "Location_Tracker.db";
     public static final int DATABASE_VERSION = 1;
 
+    public static final String SCHEME = ContentResolver.SCHEME_CONTENT;
+    public static final String AUTHORITY = "com.locationtracker.myapp.locationtracker.locationsprovider";
+    public static final String BASE_URI = SCHEME + "://" + AUTHORITY;
+
     public static class Tracks implements BaseColumns {
 
         public static final String TABLE_NAME = "Tracks";
+
+        public static final String URI = BASE_URI + "/tracks";
 
         public static final String NAME_COLUMN = "name";
         public static final String DESCRIPTION_COLUMN = "description";
@@ -42,6 +49,8 @@ public class LocationsContractClass {
     public static class Locations implements BaseColumns {
 
         public static final String TABLE_NAME = "Locations";
+
+        public static final String URI = BASE_URI + "/locations";
 
         public static final String TRACK_ID_COLUMN  = "Track_id";
         public static final String LATITUDE_COLUMN = "Latitude";

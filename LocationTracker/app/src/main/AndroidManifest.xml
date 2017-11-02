@@ -20,6 +20,13 @@
         <activity android:name=".TrackDetailsActivity" />
         <activity android:name=".AddLocationActivity" />
         <activity android:name=".SettingsActivity"></activity>
+
+        <provider
+            android:name=".provider.LocationsProvider"
+            android:authorities="com.locationtracker.myapp.locationtracker.locationsprovider"
+            android:enabled="true"
+            android:exported="true"
+            android:label="Content Provider for Location Tracker" />
     </application>
 
 </manifest>

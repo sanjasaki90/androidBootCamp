@@ -22,7 +22,7 @@
         android:hint="@string/track_name_Latitude"
         android:layout_below="@+id/myTracksTitle"
         android:inputType="numberDecimal"
-        android:drawableEnd="@drawable/degree"
+        android:drawableEnd="@drawable/locationtracker"
         style="@style/editText" />
 
     <TextView
@@ -36,7 +36,7 @@
         android:hint="@string/track_name_Longitude"
         android:layout_below="@+id/editLatitude"
         android:inputType="numberDecimal"
-        android:drawableEnd="@drawable/degree"
+        android:drawableEnd="@drawable/locationtracker"
         style="@style/editText" />
 
     <TextView
